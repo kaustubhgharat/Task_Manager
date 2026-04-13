@@ -15,11 +15,12 @@ const frontendBaseURL = process.env.FRONTEND_BASE_URL;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser(secret));
+
 app.use(
   cors({
-    origin: frontendBaseURL,
+    origin: true,
     credentials: true,
-  })
+  }),
 );
 
 app.use("/api/v1/user", userRoutes);
@@ -33,3 +34,7 @@ app.listen(PORT, async () => {
   await connectDB();
   console.log(`Server started on PORT: ${PORT}`);
 });
+
+
+
+// npm run dev -- --host
