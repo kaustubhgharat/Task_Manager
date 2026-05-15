@@ -37,6 +37,44 @@ app.listen(PORT, async () => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
 // 🔹 1. EC2 pe connect ho (tu already ho)
 // ssh -i your-key.pem ec2-user@your-ip
 
